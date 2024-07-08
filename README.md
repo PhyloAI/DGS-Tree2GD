@@ -62,7 +62,7 @@ cat namelist.txt | while read name; do cd $name/; mv longest_orfs.pep $name.pep;
 cat namelist.txt | while read name; do cd $name/; cp $name* /path/to/target/directory; cd ../; done 
 python delete_redundant_information.py <*.cds and *.pep directory> <output directory>
 ```
-### Step5: Replace the scripts and run DGS-Tree2GD
+### Step 5: Replace the scripts and run DGS-Tree2GD
 Note: After installing Tree2GD, please replace the original script with our modified versions.
 ```
 Tree2gd -i <fatsa file directory> -tree <species tree> --cds2tree
